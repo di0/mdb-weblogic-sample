@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-ejb-jar xmlns="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.bea.com/ns/weblogic/90
+                  http://www.bea.com/ns/weblogic/90/weblogic-ejb-jar.xsd">
+
+	<weblogic-enterprise-bean>
+		<ejb-name>EntityResourceMDB</ejb-name>
+		<dispatch-policy>WorkManager-TEST</dispatch-policy>
+	</weblogic-enterprise-bean>
+	<work-manager>
+		<name>WorkManager-TEST</name>
+		<min-threads-constraint-name>MinThreadsConstraint-TEST</min-threads-constraint-name>
+		<max-threads-constraint-name>MaxThreadsConstraint-TEST</max-threads-constraint-name>
+		<ignore-stuck-threads>true</ignore-stuck-threads>
+	</work-manager>
+</weblogic-ejb-jar>
+
